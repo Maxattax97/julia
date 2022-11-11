@@ -1,0 +1,11 @@
+NMEA 0183 devices are designated as either talkers or listeners (with some devices being both),
+employing an asynchronous serial interface with the following parameters:
+Baud rate: 4800
+Number of data bits: 8 (bit 7 is 0)
+Stop bits: 1 (or more)
+Parity: none
+Handshake: none
+NMEA 0183 allows a single talker and several listeners on one circuit. The recommended interconnect
+wiring is a shielded twisted pair, with the shield grounded only at the talker. The standard dos not specify
+the use of a particular connector. Note: The new 0183-HS standard (HS = high speed) introduced in
+version 3.0 uses a 3-wire interface and a baud rate of 38400. This type of interface is not discussed here.

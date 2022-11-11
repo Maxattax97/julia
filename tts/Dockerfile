@@ -1,6 +1,5 @@
-FROM python:3-slim-bullseye
+FROM tts
 
-RUN apt-get update && apt-get install -y build-essential sox libsndfile1 ffmpeg && apt-get clean && rm -rf /var/lib/apt/lists/*
-RUN pip3 install TTS
+RUN apt-get update && apt-get install -y nodejs && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-CMD [ "tts-server" ]
+CMD [ "node" ]
