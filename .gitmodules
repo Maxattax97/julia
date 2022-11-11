@@ -1,0 +1,3 @@
+[submodule "tts/TTS"]
+	path = tts/TTS
+	url = git@github.com:coqui-ai/TTS.git
