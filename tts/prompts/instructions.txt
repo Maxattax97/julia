@@ -1,0 +1,3 @@
+ 1. Download and install Audacity for your operating system.
+2. Click File >>  import to bring in your target audio file.Audacity happily handles many audio file types, the common uncompressed WAV and AIFF files, the equally common compressed MP3 files, but also slightly less common types such as OGG and FLAC files.
+3. Click the play button to hear your file. The waveform represents your audio file. A single waveform indicates a mono recording, two waveforms represent a stereo audio file (left and right channels.
