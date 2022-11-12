@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+docker run \
+	-v /tmp/tts/:/root/.local/:Z,U \
+	-v /home/max/src/julia/tts/speakers/:/root/speakers/:Z,U \
+	-v /home/max/src/julia/tts/out/:/root/out/:Z,U \
+	-it tts \
+	--model_name 'tts_models/multilingual/multi-dataset/your_tts' \
+	--language_idx "en" \
+	--speaker_wav "/root/speakers/${1}/speaker_short.wav" \
+	--out_path '/root/out/output.wav' \
+	--text "${2}"
